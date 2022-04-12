@@ -16,17 +16,43 @@
 
     <div class="menu">
       <a href="#" class="border">Cadastro de transações</a>
-      
       <a href="#" class="clean">Limpar dados</a>
     </div>
   </header>
   <main>
-    <section class="transacoes">
+    <section>
+      <div class="transaction-container">
+        <div class="transaction-content">
+          <h2>Nova transação</h2>
+          <form>
+            <div class="form-group">
+              <label for="choose">Tipo de transação</label>
+              <select id="choose">
+                <option value="buy">Compra</option>
+                <option value="sell">Venda</option>
+              </select>
+            </div>
 
-    </section>
+            <div class="form-group">
+              <label for="name">Nome da mercadoria</label>
+              <input type="text" id="name" placeholder="Mercadoria">
+            </div>
 
-    <section class="extrato">
+            <div class="form-group">
+              <label for="price">Valor</label>
+              <input type="number" id="price" placeholder="R$ 0,00">
+            </div>
 
+            <div class="form-group">
+              <input type="submit" value="Adicionar transação">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="statement-container">
+
+      </div>
     </section>
   </main>
 </body>

@@ -1,0 +1,76 @@
+main section {
+  display: flex;
+  padding-top: 30px;
+}
+
+main section .transaction-container {
+  border: 1px solid #979797; 
+  width: 400px;
+}
+
+main section .transaction-container .transaction-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+main section .transaction-container .transaction-content h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main section .transaction-container .transaction-content form .form-group {
+  margin-bottom: 20px;
+}
+
+main section .transaction-container .transaction-content form .form-group label {
+  margin-bottom: 8px;
+  color:#333333;
+  font-weight: 400;
+}
+
+main section .transaction-container .transaction-content form label {
+  display: block;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+main section .transaction-container .transaction-content form .form-group select, main section .transaction-container .transaction-content form .form-group input {
+  width: 100%;
+  height: 32px;
+  padding: 0 15px;
+  border-radius: 4px;
+  color: #888888;
+  border: 1px solid #979797;
+  outline: none;
+  transition: border-color 0.2s ease-in;
+  font-family: 'Lato', sans-serif;
+}
+
+main section .transaction-container .transaction-content form .form-group select:focus, main section .transaction-container .transaction-content form .form-group input:focus {
+  border-color: #333333;
+}
+
+main section .transaction-container .transaction-content form .form-group input[type="submit"] {
+  background: #333333;
+  color: #FFFFFF;
+  padding: 8px;
+  height: 35px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main section .transaction-container .transaction-content form .form-group:last-child {
+  margin-bottom: 0;
+}

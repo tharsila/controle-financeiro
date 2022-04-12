@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 10px;
+  background:#E0E0E0;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo img {
+  width: 40px;
+}
+
+header .logo h1 {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color:#333333;
+}
+
+header .menu a {
+  padding: 15px 0;
+  text-decoration: none;
+  text-transform: capitalize;
+  color:#333333;
+  font-weight: 600;
+  font-size: 16px;
+  background: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+header .menu a:hover {
+  background: #333333;
+  color: #ffffff;
+}
+
+header .menu .border, header .menu .clean{
+  padding-left: 20px;
+}
+
+header .menu .border::after {
+  content: " ";
+  margin-left: 15px;
+  border-right: 1px solid #979797;
+}
+
+header .menu .clean {
+  padding-right: 20px;
+}

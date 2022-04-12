@@ -8,19 +8,21 @@
   <title>Controle Financeiro</title>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="">
-      <h1>controle financeiro</h1>
-    </div>
-
-    <div class="menu">
-      <a href="#" class="border">Cadastro de transações</a>
-      <a href="#" class="clean">Limpar dados</a>
+  <header class="header-bg">
+    <div class="header container">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="">
+        <h1>controle financeiro</h1>
+      </div>
+  
+      <div class="menu">
+        <a href="#" class="border">Cadastro de transações</a>
+        <a href="#" class="clean">Limpar dados</a>
+      </div>
     </div>
   </header>
   <main>
-    <section>
+    <section class="container">
       <div class="transaction-container">
         <div class="transaction-content">
           <h2>Nova transação</h2>
@@ -51,7 +53,47 @@
       </div>
 
       <div class="statement-container">
-
+        <div class="statement-content">
+          <h2>Extrato de transações</h2>
+          <table class="list">
+            <thead>
+              <tr>
+                <th>Mercadoria</th>
+                <th class="right">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>+ Notebook</td>
+                <td>R$ 4500,00</td>
+              </tr>
+              <tr>
+                <td>+ Microfone</td>
+                <td>R$ 150,00</td>
+              </tr>
+              <tr>
+                <td>+ Celular</td>
+                <td>R$ 1000,00</td>
+              </tr>
+              <tr>
+                <td class="line-one"></td>
+                <td class="line-two"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Total</th>
+                <th class="right">
+                  R$ 5650,00
+                </th>
+              </tr>
+              <tr>
+                <td></td>
+                <td class="profit">[LUCRO]</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </section>
   </main>

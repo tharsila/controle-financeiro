@@ -1,0 +1,47 @@
+.statement-container {
+  width: 100%;
+}
+
+.statement-container .statement-content {
+  margin: 20px;
+}
+
+.statement-container .statement-content h2{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.statement-container .statement-content .list {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.statement-container .statement-content .list thead tr th, 
+.statement-container .statement-content .list tfoot tr th {
+  text-align: left;
+}
+
+.statement-container .statement-content .list thead tr .right,  
+.statement-container .statement-content .list tbody tr td:last-child,
+.statement-container .statement-content .list tfoot tr .right,
+.statement-container .statement-content .list tfoot tr td {
+  text-align: right;
+}
+
+.statement-container .statement-content .list tbody tr .line-one, 
+.statement-container .statement-content .list tbody tr .line-two {
+  padding: 1px;
+}
+
+.statement-container .statement-content .list tfoot tr .profit {
+  font-size: 10px;
+}
+
+.statement-container .statement-content .list thead tr th, 
+.statement-container .statement-content .list tbody tr td{
+  border-bottom: 1px solid #5E5E5E;
+  padding: 10px 0;
+}
+ 

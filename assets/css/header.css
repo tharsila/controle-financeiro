@@ -1,22 +1,25 @@
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 25px 10px;
+.header-bg {
+  padding: 25px 0;
   background:#E0E0E0;
 }
 
-header .logo {
+.header-bg .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bg .header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header .logo img {
+.header-bg .header .logo img {
   width: 40px;
 }
 
-header .logo h1 {
+.header-bg .header .logo h1 {
   margin-left: 20px;
   font-size: 20px;
   font-weight: 600;
@@ -24,10 +27,9 @@ header .logo h1 {
   color:#333333;
 }
 
-header .menu a {
+.header-bg .header .menu a {
   padding: 15px 0;
   text-decoration: none;
-  text-transform: capitalize;
   color:#333333;
   font-weight: 600;
   font-size: 16px;
@@ -35,21 +37,22 @@ header .menu a {
   transition: all 0.3s ease-in-out;
 }
 
-header .menu a:hover {
+.header-bg .header .menu a:hover {
   background: #333333;
   color: #ffffff;
 }
 
-header .menu .border, header .menu .clean{
+.header-bg .header .menu .border, 
+.header-bg .header .menu .clean{
   padding-left: 20px;
 }
 
-header .menu .border::after {
+.header-bg .header .menu .border::after {
   content: " ";
   margin-left: 15px;
   border-right: 1px solid #979797;
 }
 
-header .menu .clean {
+.header-bg .header .menu .clean {
   padding-right: 20px;
 }

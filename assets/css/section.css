@@ -1,11 +1,15 @@
+main {
+  padding: 0 20px;
+}
+
 main section {
   display: flex;
-  padding-top: 30px;
+  padding: 25px 15px;
 }
 
 main section .transaction-container {
   border: 1px solid #979797; 
-  width: 400px;
+  width: 50%;
 }
 
 main section .transaction-container .transaction-content {

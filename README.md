@@ -23,16 +23,14 @@
  <h3>Mobile</h3>
  
 <div align="center">
-  <img align="center" src ="" width="300px" />
- 
-
+  <img align="center" src ="https://user-images.githubusercontent.com/89864249/163240499-26ca4e3c-fc78-4a04-bfc2-b39d73930e94.PNG" width="300px" />
 </div>
  
  <h3>Web</h3>
  
 <div align="center">
- <img align="center" src ="" width="400px" />
- <img align="center" src ="" width="400px"/>
+ <img align="center" src ="https://user-images.githubusercontent.com/89864249/163240430-03dca643-0956-4661-a151-27655982e234.PNG" width="800px" />
+ 
 </div>
 
  

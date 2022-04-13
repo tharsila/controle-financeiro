@@ -42,6 +42,10 @@
   color: #ffffff;
 }
 
+.header-bg .header .logo #menu-mobile {
+  display: none;
+}
+
 .header-bg .header .menu .border, 
 .header-bg .header .menu .clean{
   padding-left: 20px;
@@ -55,4 +59,25 @@
 
 .header-bg .header .menu .clean {
   padding-right: 20px;
+}
+
+/*----------- Responsivo----------- */
+
+@media (max-width: 850px) {
+  .header-bg .header .logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-bg .header .logo h1 {
+    margin: 0;
+  }
+
+  .header-bg .header .logo #menu-mobile {
+    display: block;
+  }
+
+  .header-bg .header .menu {
+    display: none;
+  }
 }

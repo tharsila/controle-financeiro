@@ -16,7 +16,15 @@
 <hr>
  
 <h2 id="sobre-o-projeto"> :page_with_curl:Sobre o projeto</h2>
-<p> <p>
+<p>Projeto individual proposto pela <a href="https://www.newtab.academy/">Newtab Academy</a>. O objetivo é criar uma SPA (Single Page Application) seguindo este layout que está <a href="https://www.figma.com/file/U8ojEXx2vxSK2KOvoBvHVH8y/Frontend-test?node-id=13%3A42">aqui</a>. <p>
+<p>Com este projeto tive a oportunidade de colocar em prática conceitos ensinados durante o módulo de HTML e CSS como:</p>
+<ul>
+ <li>Utilização de tags semânticas.</li>
+ <li>Criação de tabelas.</li>
+ <li>Posicionar elementos com flexbox.</li>
+ <li>Utilização de pseudo-elemento.</li>
+ <li>Tornar websites responsivos.</li>
+</ul>
 <hr>
  
  <h2 id="layout">:art:Layout</h2>

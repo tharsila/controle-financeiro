@@ -18,15 +18,9 @@
   border-spacing: 0;
 }
 
-.list thead tr th, 
-.list tfoot tr th {
-  text-align: left;
-}
-
 .list thead tr .right,  
 .list tbody tr td:last-child,
-.list tfoot tr .right,
-.list tfoot tr td {
+.list tfoot tr .right {
   text-align: right;
 }
 
@@ -37,11 +31,21 @@
 
 .list tfoot tr .profit {
   font-size: 10px;
+  text-align: right; ;
 }
 
-.list thead tr th, 
+.list thead tr td, 
 .list tbody tr td{
   border-bottom: 1px solid #979797;
   padding: 10px 0;
+}
+
+.list thead tr td,
+.list tfoot tr td {
+  font-weight: 700;
+}
+
+.list tfoot tr td{
+  padding-top: 5px;;
 }
  

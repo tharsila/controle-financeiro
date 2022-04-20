@@ -26,21 +26,21 @@ main section .transaction-container .transaction-content h2 {
   margin-bottom: 20px;
 }
 
-main section .transaction-container .transaction-content form .form-content .form-group {
+form .form-content .form-group {
   margin-bottom: 20px;
 }
 
-main section .transaction-container .transaction-content form .form-content .form-group:first-child {
+form .form-content .form-group:first-child {
   width: 100%;
 }
 
-main section .transaction-container .transaction-content form .form-content .form-group label {
+form .form-content .form-group label {
   margin-bottom: 8px;
   color:#333333;
   font-weight: 400;
 }
 
-main section .transaction-container .transaction-content form .form-content label {
+form .form-content label {
   display: block;
 }
 
@@ -55,8 +55,8 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-main section .transaction-container .transaction-content form .form-content .form-group select, 
-main section .transaction-container .transaction-content form .form-content .form-group input {
+form .form-content .form-group select, 
+form .form-content .form-group input {
   width: 100%;
   height: 32px;
   padding: 0 15px;
@@ -69,12 +69,12 @@ main section .transaction-container .transaction-content form .form-content .for
   font-family: 'Lato', sans-serif;
 }
 
-main section .transaction-container .transaction-content form .form-content .form-group select:focus, 
-main section .transaction-container .transaction-content form .form-content .form-group input:focus {
+form .form-content .form-group select:focus, 
+form .form-content .form-group input:focus {
   border-color: #333333;
 }
 
-main section .transaction-container .transaction-content form .form-group input[type="submit"] {
+form .form-group input[type="submit"] {
   background: #333333;
   color: #FFFFFF;
   padding: 8px;
@@ -86,7 +86,7 @@ main section .transaction-container .transaction-content form .form-group input[
   cursor: pointer;
 }
 
-main section .transaction-container .transaction-content form .form-content .form-group:last-child {
+form .form-content .form-group:last-child {
   margin-bottom: 0;
 }
 
@@ -99,6 +99,15 @@ main section .transaction-container .transaction-content form .form-content .for
 
   main section .transaction-container {
     width: 100%;
+    border: none;
+  }
+
+  main section .transaction-container .transaction-content {
+    padding: 0;
+  }
+
+  main section .transaction-container .transaction-content h2 {
+    display: none;
   }
 
   main section .transaction-container .transaction-content form {
@@ -108,48 +117,48 @@ main section .transaction-container .transaction-content form .form-content .for
     align-items: flex-end;
   }
 
-  main section .transaction-container .transaction-content form .form-content {
+  form .form-content {
     display: flex;
     justify-content:space-between;
     width: 100%;
   }
 
-  main section .transaction-container .transaction-content form .form-content .form-group label,
-  main section .transaction-container .transaction-content form .form-content .form-group select, 
-  main section .transaction-container .transaction-content form .form-content .form-group input {
+  form .form-content .form-group label,
+  form .form-content .form-group select, 
+  form .form-content .form-group input {
     font-size: 12px;
   }
 
-  main section .transaction-container .transaction-content form .form-content .form-group:first-child,
-  main section .transaction-container .transaction-content form .form-content .form-group:nth-child(3) {
+  form .form-content .form-group:first-child,
+  form .form-content .form-group:nth-child(3) {
     width: 25%;
   }
   
-  main section .transaction-container .transaction-content form .form-content .form-group:nth-child(2) {
+  form .form-content .form-group:nth-child(2) {
     width: 45%;
   }
 
-  main section .transaction-container .transaction-content form .button {
+  form .button {
     width: 35%;
   }
 
 }
 
 @media (max-width: 505px) {
-  main section .transaction-container .transaction-content form .form-content {
+  form .form-content {
     flex-direction: column;
   }
 
-  main section .transaction-container .transaction-content form .form-content .form-group label,
-  main section .transaction-container .transaction-content form .form-content .form-group select, 
-  main section .transaction-container .transaction-content form .form-content .form-group input {
+  form .form-content .form-group label,
+  form .form-content .form-group select, 
+  form .form-content .form-group input {
     font-size: 16px;
   }
 
-  main section .transaction-container .transaction-content form .form-content .form-group:first-child,
-  main section .transaction-container .transaction-content form .form-content .form-group:nth-child(2),
-  main section .transaction-container .transaction-content form .form-content .form-group:nth-child(3),
-  main section .transaction-container .transaction-content form .button {
+  form .form-content .form-group:first-child,
+  form .form-content .form-group:nth-child(2),
+  form .form-content .form-group:nth-child(3),
+  form .button {
     width: 100%;
   }
 }

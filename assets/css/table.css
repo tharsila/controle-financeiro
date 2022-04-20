@@ -19,9 +19,10 @@
 }
 
 .list thead tr .right,  
-.list tbody tr td:last-child,
 .list tfoot tr .right {
   text-align: right;
+  padding-right: 10px;
+  width: 100%;
 }
 
 .list tbody tr .line-one, 
@@ -29,15 +30,28 @@
   padding: 1px;
 }
 
+.list tbody tr .transaction {
+text-align: right;
+padding-right: 10px;
+}
+
+.list tbody tr .price {
+ text-align: right;
+ padding-right: 10px;
+ width: 100%;
+}
+
 .list tfoot tr .profit {
   font-size: 10px;
-  text-align: right; ;
+  text-align: right;
+  padding-right: 10px;
 }
 
 .list thead tr td, 
 .list tbody tr td{
   border-bottom: 1px solid #979797;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .list thead tr td,
@@ -49,3 +63,8 @@
   padding-top: 5px;;
 }
  
+@media (max-width: 850px) {
+  .list tbody tr .product {
+    width: 100%;
+  }
+}

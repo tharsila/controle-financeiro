@@ -16,3 +16,16 @@ body {
   padding-right: 20px;
   margin: 0 auto;
 }
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  padding-left: 20px;
+}
+
+.width {
+  width: 100%;
+}

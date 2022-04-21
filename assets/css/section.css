@@ -99,15 +99,6 @@ form .form-content .form-group:last-child {
 
   main section .transaction-container {
     width: 100%;
-    border: none;
-  }
-
-  main section .transaction-container .transaction-content {
-    padding: 0;
-  }
-
-  main section .transaction-container .transaction-content h2 {
-    display: none;
   }
 
   main section .transaction-container .transaction-content form {
@@ -145,6 +136,23 @@ form .form-content .form-group:last-child {
 }
 
 @media (max-width: 505px) {
+
+  main section .divider {
+    border-bottom: 1px solid #979797;
+    padding-top: 30px;
+  }
+
+  main section .transaction-container .transaction-content {
+    padding: 0;
+  }
+  
+  main section .transaction-container {
+    border: none;
+  }
+  main section .transaction-container .transaction-content h2 {
+    display: none;
+  }
+
   form .form-content {
     flex-direction: column;
   }

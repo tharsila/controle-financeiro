@@ -18,10 +18,18 @@
   border-spacing: 0;
 }
 
-.list thead tr .right,  
-.list tfoot tr .right {
+.list thead tr .right,
+.list tbody tr .transaction,
+.list tbody tr .price,  
+.list tfoot tr .right,
+.list tfoot tr .profit {
   text-align: right;
   padding-right: 10px;
+}
+
+.list thead tr .right,
+.list tbody tr .price,  
+.list tfoot tr .right {
   width: 100%;
 }
 
@@ -30,21 +38,8 @@
   padding: 1px;
 }
 
-.list tbody tr .transaction {
-text-align: right;
-padding-right: 10px;
-}
-
-.list tbody tr .price {
- text-align: right;
- padding-right: 10px;
- width: 100%;
-}
-
 .list tfoot tr .profit {
   font-size: 10px;
-  text-align: right;
-  padding-right: 10px;
 }
 
 .list thead tr td, 

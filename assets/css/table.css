@@ -59,7 +59,17 @@
 }
  
 @media (max-width: 850px) {
+  .statement-container .statement-content {
+    margin: 0;
+  }
+
   .list tbody tr .product {
     width: 100%;
+  }
+}
+
+@media (max-width: 505px) {
+  .statement-container .statement-content {
+    margin: 0;
   }
 }

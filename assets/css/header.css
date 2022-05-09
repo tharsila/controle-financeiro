@@ -91,7 +91,7 @@
     z-index: 1000;
     transform: rotate(180deg);
     position: absolute;
-    right: 185px;
+    right: 25vw;
   }
 
   .header-bg .header .menu {
@@ -102,7 +102,7 @@
     right: 0;
     top: 0;
     height: 100vh;
-    width: 22vh;
+    width: 32vw;
     background: #333333;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
@@ -149,6 +149,10 @@
 
 @media (max-width: 505px)  {
   .header-bg .header .menu {
-    width: 38vh;
+    width: 80vw;
+  }
+
+  .header-bg .header .logo #menu-mobile.fa-times{
+    right: 65vw;
   }
 }

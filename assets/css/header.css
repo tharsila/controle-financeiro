@@ -64,7 +64,7 @@
 /*----------- Responsivo----------- */
 
 @media (max-width: 850px) {
-  body {
+  * {
     overflow-x: hidden;
   }
   
@@ -83,7 +83,7 @@
   .header-bg .header .logo #menu-mobile{
     display: block;
     cursor: pointer;
-    transition: 0.6s;
+    transition: 0.5s;
   }
 
   .header-bg .header .logo #menu-mobile.fa-times{
@@ -124,7 +124,7 @@
 
   .header-bg .header .menu .border {
     margin: 60px 0 10px 0;
-    padding: 10px;
+    padding: 20px;
   }
 
   .header-bg .header .menu .border::after {
@@ -134,7 +134,7 @@
   }
 
   .header-bg .header .menu .clean {
-    padding: 15px;
+    padding: 20px;
   }
 
   @keyframes navLinkFade {
@@ -148,6 +148,16 @@
     }
   }
 
+}
+
+@media (max-width: 580px) {
+  .header-bg .header .menu.active {
+    width: 40vw;
+  }
+
+  .header-bg .header .logo #menu-mobile.fa-times{
+    right: 30vw;
+  }
 }
 
 @media (max-width: 505px)  {

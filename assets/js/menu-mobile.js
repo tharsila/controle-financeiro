@@ -5,6 +5,10 @@ export default function menuMobile () {
   
   /* Evento que será realizado quando o icone mobile for ativado */
   buttonMobile.addEventListener('click', handleMenu);
+  window.addEventListener('scroll', () => {
+    buttonMobile.classList.remove('fa-times');
+    menu.classList.remove('active');
+  })
 
   /* Torna itens do menu animados */
   function animationLinks () {

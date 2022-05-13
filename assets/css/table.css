@@ -33,6 +33,10 @@
   width: 100%;
 }
 
+.list tbody .flex .product {
+  text-transform: capitalize;
+}
+
 .list tbody tr .line-one, 
 .list tbody tr .line-two {
   padding: 1px;

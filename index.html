@@ -29,13 +29,13 @@
       <div class="transaction-container">
         <div class="transaction-content">
           <h2>Nova transação</h2>
-          <form>
+          <form id="form">
             <div class="form-content">
               <div class="form-group">
                 <label for="choose">Tipo de transação</label>
                 <select id="choose">
-                  <option value="buy">Compra</option>
-                  <option value="sell">Venda</option>
+                  <option value="-">Compra</option>
+                  <option value="+">Venda</option>
                 </select>
               </div>
   
@@ -70,9 +70,16 @@
                 <td class="right">Valor</td>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="result">
+              <tr class="flex dynamic-content">
+                <td class="transaction"></td>
+                <td class="product" style="text-align:center; width: 100%">Nenhuma Transação cadastrada</td>
+              </tr>
+            </tbody>
+            <tfoot id="total"></tfoot>
+            <!-- <tbody>
               <tr class="flex">
-                <td class="transaction" >+</td>
+                <td class="transaction">+</td>
                 <td class="product "> Lorem ipsum dolor sit amet consectetur</td>
                 <td class="price width">R$ 1299,99</td>
                 
@@ -108,7 +115,7 @@
                 <td class="profit width">[LUCRO]</td>
                 <td></td>
               </tr>
-            </tfoot>
+            </tfoot> -->
           </table>
         </div>
       </div>

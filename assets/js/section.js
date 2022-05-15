@@ -20,6 +20,7 @@ export default function section () {
   function maskedValue(event) {
     if (regexp.test(event.key)) {
       event.preventDefault();
+      return
     }
   
     if(!event.target.value) return;
@@ -49,30 +50,41 @@ export default function section () {
   
     /* percorre pelos elementos cadastrados e mostra na tela */
     let total = 0;
+
+
+    //formata o valor para Real "R$"
+    function formatterCurrency(value) {
+      const valueFormat = value.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      });
+      return valueFormat;
+    }
+
     elements.forEach((element) => { 
       result.innerHTML += `
         <tr class="flex dynamic-content">
           <td class="transaction">${element.choose === '-' ? '-' : '+'}</td>
           <td class="product ">${element.name}</td>
-          <td class="price width">R$ ${element.price}</td> 
+          <td class="price width">R$ ${formatterCurrency(element.price)}</td> 
         </tr>
       `
 
       /* realiza calculo para saber se existe prejuízo ou lucro */
-      let price = parseFloat(element.price.replace(/[^0-9]/g, "").replace(",", "."))
-   
+      let price = element.price;
+      
       if (element.choose === '-') {
-        total -= price / 100
+        total -= price
         console.log(total)
       } else if (element.choose === '+') {
-        total += price / 100
+        total += price
         console.log(total)
       }
     })
     
     /* formata o valor do produto para o real(moeda brasileira) */
-    const priceBRL = total.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'});
-   
+    const priceBRL = total.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL', maximumFractionDigits: 2});
+
     /* adiciona linha da tabela mostrando o valor total dos produtos */
     const foot = document.getElementById('total');
     foot.innerHTML = `
@@ -136,7 +148,7 @@ export default function section () {
       {
         choose: event.target.elements['choose'].value,
         name: event.target.elements['name'].value,
-        price: event.target.elements['price'].value,
+        price: event.target.elements['price'].value.replaceAll('.', '').replaceAll(',', '.')
       },
     )
   

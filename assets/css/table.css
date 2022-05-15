@@ -70,6 +70,10 @@
   .list tbody tr .product {
     width: 100%;
   }
+
+  .list tfoot .flex .left {
+    width: 100%;
+  }
 }
 
 @media (max-width: 505px) {

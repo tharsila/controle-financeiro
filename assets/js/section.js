@@ -37,7 +37,7 @@ export default function section() {
         <tr class="flex dynamic-content">
           <td class="transaction">${element.choose === '-' ? '-' : '+'}</td>
           <td class="product ">${element.name}</td>
-          <td class="price width">R$ ${formatterCurrency(element.price)}</td> 
+          <td class="price width">${formatterCurrency(Number(element.price))}</td> 
         </tr>
       `;
 

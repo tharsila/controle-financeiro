@@ -2,9 +2,12 @@ export default function menuMobile () {
   const buttonMobile = document.getElementById('menu-mobile');
   const menu = document.querySelector('.menu');
   const links = document.querySelectorAll('.menu a');
+  const clean = document.querySelector('.clean');
   
   /* Evento que será realizado quando o icone mobile for ativado */
   buttonMobile.addEventListener('click', handleMenu);
+
+  clean.addEventListener('click', removeMenu);
   
   /* Torna itens do menu animados */
   function animationLinks () {
@@ -21,5 +24,13 @@ export default function menuMobile () {
     menu.classList.toggle('active');
     animationLinks();
   }
+
+  /* remove menu mobile quando o usuário apaga os dados da tabela*/
+  function removeMenu () {
+    buttonMobile.classList.remove('fa-times');
+    menu.classList.remove('active');
+    animationLinks();
+  }
+
 }
 

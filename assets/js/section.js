@@ -134,25 +134,29 @@ export default function section() {
 
   /* ativa a função submit e 'empurra' o objeto para o array elements */
   function handleSubmit(event) {
-    event.preventDefault();
-    elements.push(
-      {
-        choose: event.target.elements.choose.value,
-        name: event.target.elements.name.value,
-        price: event.target.elements.price.value.replaceAll('.', '').replaceAll(',', '.'),
-      },
-    );
-
-    /* apaga dados preenchidos quando o formulario for submetido */
-    document.getElementById('choose').value = '-';
-    document.getElementById('name').value = '';
-    document.getElementById('price').value = '';
-    /* persiste os dados que o usuário cadastrou */
-
-    localStorage.setItem('elements', JSON.stringify(elements));
-    if (elements !== null) {
-      cleanTable();
-      drawTable();
+    if (event.target.elements.name.value.trim() === '') {
+      alert("Por favor preencha o nome do produto");
+    } else {
+      event.preventDefault();
+      elements.push(
+        {
+          choose: event.target.elements.choose.value,
+          name: event.target.elements.name.value,
+          price: event.target.elements.price.value.replaceAll('.', '').replaceAll(',', '.'),
+        },
+      );
+  
+      /* apaga dados preenchidos quando o formulario for submetido */
+      document.getElementById('choose').value = '-';
+      document.getElementById('name').value = '';
+      document.getElementById('price').value = '';
+      /* persiste os dados que o usuário cadastrou */
+  
+      localStorage.setItem('elements', JSON.stringify(elements));
+      if (elements !== null) {
+        cleanTable();
+        drawTable();
+      }
     }
   }
   /* aciona o evento de submit e chama a função */

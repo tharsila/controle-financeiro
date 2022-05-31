@@ -35,6 +35,7 @@
 
 .list tbody .flex .product {
   text-transform: capitalize;
+  width: 100%;
 }
 
 .list tbody tr .line-one, 
@@ -65,10 +66,6 @@
 @media (max-width: 850px) {
   .statement-container .statement-content {
     margin: 0;
-  }
-
-  .list tbody tr .product {
-    width: 100%;
   }
 
   .list tfoot .flex .left {
